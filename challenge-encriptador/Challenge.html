@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="./img/logo.png" alt="logo del sitio">
+    </header>
+    <main class="encriptador">
+        <section class="encriptador__contenido">
+        
+            <textarea class="encriptador__contenido__input" name="texto" id="texto" placeholder="Ingrese el texto aqui"></textarea>
+            
+            <p class="encriptador__contenido__texto"> Solo letras minúsculas y sin acentos</p>
+            
+            
+            <section class="encriptador__contenido__botones">
+                
+                <button class="encriptador__contenido__botonEncriptar" onclick="encriptar();" id="encriptar">Encriptar</button>
+                <button class="encriptador__contenido__botonDesencriptar" onclick="desencriptar();" id="desencriptar">Desencriptar</button>
+            </section>
+        </section>
+        
+        <section class="encriptador__resultado">
+            <img class="encriptador__resultado__imagen" src="./img/Muñeco.png">
+
+            <div class="encriptador__resultado__texto__encriptado">
+                <p class="texto__encriptado" id="textoEncriptado"></p>
+                <button class="texto__encriptado__boton__copiar" onclick="copiar();">Copiar</button>
+            </div>
+            
+            <section class="encriptador__resultado__texto">
+                <p class="encriptador__resultado__texto__mensaje">Ningún mensaje fue encontrado</p>
+            
+            </section>
+        
+        </section>
+    </main>
+
+    </div>
+
+
+    <footer class="footer">
+        <p>Desarrollado por Carla Cortes</p>
+
+    </footer>
+</body>
+
+<script src="./Challenge.js"></script>
+</html>
